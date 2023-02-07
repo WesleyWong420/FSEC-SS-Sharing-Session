@@ -17,3 +17,9 @@ Download Rust Binary - [flagchecker](https://cloudmails-my.sharepoint.com/:u:/g/
 4. Import Ghidra Scripts under `Windows` > `Script Manager` (Step 5 & 6)
 5. Demangle Rust symbols using [DemangleRust.py](https://gist.githubusercontent.com/str4d/e541f4c28e2bca80d222434ac1a204f4/raw/80688c7458284310b7cad445ce94333a0ae969ef/DemangleRust.py)
 6. Analyze Crate dependencies using [RustDependencyStrings.py](https://raw.githubusercontent.com/BinaryDefense/GhidraRustDependenciesExtractor/main/RustDependencyStrings.py)
+
+### Tips
+1. Analyze `.rodata` section under `Program Trees`
+2. Search for interesting strings
+3. Analyze the usage of `reqwest` and `rot13` in combination with other user-defined functions found under `Namespaces`
+4. Refer to Rust Package Registry for [reqwest](https://crates.io/crates/reqwest) and [Rot13](https://crates.io/crates/rot13)
