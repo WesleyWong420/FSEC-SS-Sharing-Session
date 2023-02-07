@@ -1,4 +1,5 @@
 # FSEC-SS Sharing Session
+![](./img/logo.png)
 
 ## Rust for Reverse Engineering
 ### Setup
@@ -6,7 +7,6 @@ Installing Ghidra
 ```
 sudo apt install ghidra
 ```
-
 ### Download Files
 Download Rust Binary - [flagchecker](https://cloudmails-my.sharepoint.com/:u:/g/personal/tp059618_mail_apu_edu_my/EWqiSpmUthFBmtikj21JL6gBPBhOW2VIMDmpGv8f0HH-sw?e=7MRhgY)
 
