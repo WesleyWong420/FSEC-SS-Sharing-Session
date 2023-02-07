@@ -10,7 +10,7 @@ sudo apt install ghidra
 ### Download Files
 Download Rust Binary - [flagchecker](https://cloudmails-my.sharepoint.com/:u:/g/personal/tp059618_mail_apu_edu_my/EWqiSpmUthFBmtikj21JL6gBPBhOW2VIMDmpGv8f0HH-sw?e=7MRhgY) (63.4MB)
 ```
-──(kali💀JesusCries)-[~/Desktop/flagchecker/target/debug]
+┌──(kali💀JesusCries)-[~/Desktop/flagchecker/target/debug]
 └─$ sha256sum flagchecker 
 f6a7bea70e44d0ae8f7990f327b7be537e28cf81f3c5df400677c3f8294ed9ec  flagchecker
 ```
@@ -24,7 +24,7 @@ f6a7bea70e44d0ae8f7990f327b7be537e28cf81f3c5df400677c3f8294ed9ec  flagchecker
 6. Analyze Crate dependencies using [RustDependencyStrings.py](https://raw.githubusercontent.com/BinaryDefense/GhidraRustDependenciesExtractor/main/RustDependencyStrings.py)
 
 ### Tips
-1. Analyze `.rodata` section under `Program Trees`
-2. Search for interesting strings
+1. Search for interesting strings
+2. Analyze `.rodata` section under `Program Trees`
 3. Analyze the usage of `reqwest` and `rot13` in combination with other user-defined functions found under `Namespaces`
 4. Refer to Rust Package Registry for [reqwest](https://crates.io/crates/reqwest) and [Rot13](https://crates.io/crates/rot13)
