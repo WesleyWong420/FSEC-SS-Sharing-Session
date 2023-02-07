@@ -8,7 +8,12 @@ Installing Ghidra
 sudo apt install ghidra
 ```
 ### Download Files
-Download Rust Binary - [flagchecker](https://cloudmails-my.sharepoint.com/:u:/g/personal/tp059618_mail_apu_edu_my/EWqiSpmUthFBmtikj21JL6gBPBhOW2VIMDmpGv8f0HH-sw?e=7MRhgY)
+Download Rust Binary - [flagchecker](https://cloudmails-my.sharepoint.com/:u:/g/personal/tp059618_mail_apu_edu_my/EWqiSpmUthFBmtikj21JL6gBPBhOW2VIMDmpGv8f0HH-sw?e=7MRhgY) (63.4MB)
+```
+──(kali💀JesusCries)-[~/Desktop/flagchecker/target/debug]
+└─$ sha256sum flagchecker 
+f6a7bea70e44d0ae8f7990f327b7be537e28cf81f3c5df400677c3f8294ed9ec  flagchecker
+```
 
 ### Walkthrough
 1. Untick `Create Address Table` under Analysis Options (Analysis will take around ~10 minutes to complete)
