@@ -39,7 +39,8 @@ f6a7bea70e44d0ae8f7990f327b7be537e28cf81f3c5df400677c3f8294ed9ec  flagchecker
 ### Setup
 ```
 git clone https://github.com/WesleyWong420/FSEC-SS-Sharing-Session.git
-cd FSEC-SS-Sharing-Session
+cd FSEC-SS-Sharing-Session/Docker
+chmod +x build.sh
 ./build.sh
 ```
 
