@@ -34,3 +34,29 @@ f6a7bea70e44d0ae8f7990f327b7be537e28cf81f3c5df400677c3f8294ed9ec  flagchecker
 * there is a `Cargo` repository with lots of Rust packages and `.rodata` section contains some links to them. For example, the string 
 ```"/root/.cargo/registry/src/github.com-{id}/reqwest"``` gives us a clue about [a library of higher level HTTP client](https://crates.io/crates/reqwest)
 * There are links not only to Rust packages, but also to particular files in those packages.
+
+## Boot2Root
+### Setup
+```
+git clone https://github.com/WesleyWong420/FSEC-SS-Sharing-Session.git
+cd FSEC-SS-Sharing-Session
+./build.sh
+```
+
+### Initial Access & Test Connection
+```
+docker exec -it knockknock /bin/bash
+
+root@47efb31454af:/# ifconfig
+
+nc <docker0-IP> 9002
+```
+
+### Download Files
+Download PCAP File - [tcpdump.cap](./tcpdump.cap) (1.2KB)
+
+### Walkthrough
+> You will receive the flag by connecting to port 9002 if all the conditions are met.
+1. Enumerate installed services: `service --status-all`
+2. Replay knock sequence as observed from `tcpdump.cap`: `knock <docker0-IP> 7000:tcp 8000:udp 9000:tcp`
+3. Loot flag!
