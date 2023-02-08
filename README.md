@@ -52,7 +52,7 @@ Installing Python Libraries
 pip3 install pycryptodome
 ```
 
-Troubleshooting
+### Troubleshooting
 [Sagemath Installation in DebianOS](https://pikaroot.github.io/blogs/2023-02-06-Sagemath_Installation_without_git_clone_repo)
 
 ## Boot2Root
