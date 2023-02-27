@@ -31,7 +31,7 @@ f6a7bea70e44d0ae8f7990f327b7be537e28cf81f3c5df400677c3f8294ed9ec  flagchecker
 
 ### General RE Tips for Rust
 * We can benefit from the fact that [Rust is an open source language](https://github.com/rust-lang/rust/)
-* there is a `Cargo` repository with lots of Rust packages and `.rodata` section contains some links to them. For example, the string 
+* There is a `Cargo` repository with lots of Rust packages and `.rodata` section contains some links to them. For example, the string 
 ```"/root/.cargo/registry/src/github.com-{id}/reqwest"``` gives us a clue about [a library of higher level HTTP client](https://crates.io/crates/reqwest)
 * There are links not only to Rust packages, but also to particular files in those packages.
 
